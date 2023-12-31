@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FunkoShop | edit</title>
+    <title>FunkoShop | create</title>
 </head>
 <body>
     <header><!-- INICIO HEADER -->
@@ -22,15 +22,16 @@
     </header><!-- FIN HEADER -->
     <main>
         <section>
-            <h2>EDITAR ITEM</h2>
+            <h2>CREAR NUEVO ITEM</h2>
         </section> 
         <section>
-            <form action="https://formsubmit.co/amarrero86mr@gmail.com" method="POST" name="edit">
+            <form action="https://formsubmit.co/amarrero86mr@gmail.com" method="POST" name="create">
                 <section>
                     <div>
                         <label for="categoria">Categoría:
                             <select name="categoria" id="categoria">
-                                <option selected value="figuras">Figuras</option>
+                                <option selected>Seleccionar</option>
+                                <option value="figuras">Figuras</option>
                                 <option value="llaveros">Llaveros</option>
                                 <option value="remeras">Remeras</option>
                             </select>
@@ -53,27 +54,27 @@
                 <section>
                     <div>
                         <label for="nombre-producto">Nombre del producto:
-                            <input type="text" name="nombre" id="nombre-producto" placeholder="Kakashi Hatake Shippuden Saga">
+                            <input type="text" name="nombre" id="nombre-producto" placeholder="Nombre del Producto">
                         </label>
                     </div>
                     <div>
-                        <textarea name="detalle-producto" id="" cols="100" rows="10" placeholder="Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori."></textarea>
+                        <textarea name="detalle-producto" id="" cols="100" rows="10" placeholder="Descripción del producto"></textarea>
                     </div>
                 </section>
                 <section>
                     <label for="codigo">SKU:<input name="codigo" id="codigo" type="text" placeholder="NAR001012"></label>
-                    <label for="precio">Precio:<input name="precio" id="precio" type="number" placeholder="1799,00"></label>
-                    <label for="stock">Strock:<input name="stock" id="stock" type="number" placeholder="10"></label>
+                    <label for="precio">Precio:<input name="precio" id="precio" type="number" placeholder="0000,00"></label>
+                    <label for="stock">Strock:<input name="stock" id="stock" type="number" placeholder="0"></label>
                 </section>
                 <section>
                     <div>
-                        <label for="descuento">Descuento:<input name="descuento" id="descuento" type="number" placeholder="10%"></label>
+                        <label for="descuento">Descuento:<input name="descuento" id="descuento" type="number" placeholder="0%"></label>
                     </div>
                     <div>
                         <label for="cuotas">Cuotas:
                             <select name="cuotas" id="cuotas">
-                                <option value="3">3 Cuotas sin interés</option>
-                                <option value="6" selected>6 Cuotas sin interés</option>
+                                <option value="3" selected>3 Cuotas sin interés</option>
+                                <option value="6">6 Cuotas sin interés</option>
                                 <option value="12">12 Cuotas sin interés</option>
                             </select>    
                         </label>
@@ -84,17 +85,10 @@
                     <div>
                         <label for="archivos">Imagenes: <input name="archivos" id="archivos" type="file" multiple accept=".jpg, .png"></label>
                     </div>
-                    <div>
-                        <img src="../images/naruto-shippuden/kakashi-1.webp" alt="figura coleccionable funko de Kakashi Saga Shippuden">
-                        <p>Frente</p>
-                    </div>
-                    <div>
-                        <img src="../images/naruto-shippuden/kakashi-box.webp" alt="caja de figura coleccionable funko de Kakashi Saga Shippuden">
-                        <p>Dorso</p>
-                    </div>
                 </section>
                 <section>
-                    <button type="submit">Modificar Producto</button>
+                    <button type="submit">Agregar Producto</button>
+                    <button type="reset">Limpiar</button>
                 </section>
 
 
