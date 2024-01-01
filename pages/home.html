@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FunkoShop | home</title>
+    <link rel="stylesheet" href="../styles/variables.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
 </head>
 <body>
     <header><!-- INICIO HEADER -->
-        <nav>
-            <picture>
+        <nav class="navbar">
+            <picture class="navbar__logo">
                 <a href="home.html">
                     <img src="../images/branding/logo_light_horizontal.svg" alt="Logo de FunkoShop">
                 </a>
             </picture>
             <div>
-                <li><a href="../pages/shop/shop.html">SHOP</a></li>
-                <li><a href="../pages/shop/contact.html">CONTACTO</a></li>
-                <li><a href="../pages/admin/login.html">LOGIN</a></li>
-                <li><a href="../pages/shop/cart.html"><img src="../images/icons/cart-icon.svg" alt="favicon Carrito"></a></li>
+                <ul class="navbar__menu">
+                    <li class="navbar__items"><a class="navbar__link" href="../pages/shop/shop.html">SHOP</a></li>
+                    <li class="navbar__items"><a class="navbar__link" href="../pages/shop/contact.html">CONTACTO</a></li>
+                    <li class="navbar__items"><a class="navbar__link" href="../pages/admin/login.html">LOGIN</a></li>
+                    <li class="navbar__items"><a class="navbar__cart" href="../pages/shop/cart.html"><img src="../images/icons/cart-icon.svg" alt="favicon Carrito"></a></li>
+                </ul>
             </div>
         </nav>
     </header><!-- FIN HEADER -->
