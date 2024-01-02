@@ -14,7 +14,6 @@ html {
 
 a {
     text-decoration: none;
-    font-size: 2em;
     font-family: inherit;
     color: inherit;
 }
@@ -34,7 +33,17 @@ p {
     font-size: var(--font-medium);
 }
 
+img{
+    width: 100%;
+}
+
 .container {
     max-width: 1200px;
-    margin: 0;
+    margin: 0 auto;
+}
+
+.wiht_icon {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
 }
