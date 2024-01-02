@@ -1,44 +1,4 @@
-@import url("../styles/variables.css");
+@import url("./variables.css");
 
-*,
-*::before, 
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-family: var(--base-font);
-    font-size: 62%;
-    color: var(--dark-solid);
-}
-
-a {
-    text-decoration: none;
-    font-size: 2em;
-    font-family: inherit;
-    color: inherit;
-}
-
-header,
-footer {
-    font-family: var(--alternative-font);
-    color: var(--light-font-solid);
-}
-
-ol,
-ul {
-    list-style-type: none;
-}
-
-p {
-    font-size: var(--font-medium);
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0;
-}
-
-@import url("../styles/navbar.css");
+@import url("./base.css");
+@import url("./navbar.css");
