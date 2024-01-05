@@ -80,13 +80,7 @@ header {
 }
 
 @media (max-width: 768px) {
-    
-    .logo-funco {
-        display: none;
-    }
-    .iso-funco {
-        display: block;
-    }
+        
     .checkbtn-menu-responsiv {
         display: block;
     }
@@ -110,5 +104,14 @@ header {
         display: inline;
         position: relative;
 
+    }
+}
+
+@media (max-width: 425px) {
+    .logo-funco {
+        display: none;
+    }
+    .iso-funco {
+        display: block;
     }
 }
