@@ -19,6 +19,7 @@ header {
     align-items: center;
     gap: var(--spacing-20);
     background-color: var(--dark-bg-solid);
+    z-index: 2;
 }
 
 .navbar__link {
@@ -46,7 +47,8 @@ header {
 .submenu {
     display: none;
     position: absolute;
-    background-color: var(--dark-bg-solid);   
+    background-color: var(--dark-bg-solid);
+    z-index: 2;
 }
 
 .submenu__link {
