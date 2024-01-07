@@ -40,15 +40,16 @@ header {
 }
 
 /*submenu*/
-.wiht_submenu:hover .submenu{
-    display: block;
-}
-
 .submenu {
     display: none;
     position: absolute;
+    margin-top: var(--spacing-36);
     background-color: var(--dark-bg-solid);
     z-index: 2;
+}
+
+.wiht_submenu:hover .submenu{
+    display: block;
 }
 
 .submenu__link {
@@ -105,7 +106,8 @@ header {
     .submenu {
         display: inline;
         position: relative;
-
+        margin-top: 0;
+        
     }
 }
 
