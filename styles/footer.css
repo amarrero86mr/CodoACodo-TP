@@ -27,5 +27,6 @@
     }
     footer nav picture a img {
         width: var(--spacing-68);
+        margin: var(--spacing-8) var(--spacing-16)
     }
 }

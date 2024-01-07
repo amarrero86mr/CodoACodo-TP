@@ -47,3 +47,9 @@ img{
     align-items: center;
     gap: var(--spacing-8);
 }
+
+@media (max-width: 768px) {
+    main {
+        padding: var(--spacing-8);
+    }
+}
