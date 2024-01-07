@@ -133,3 +133,53 @@
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .collection__title {
+        font-size: var(--font-large);
+    }
+    .collection__text {
+        font-size: var(--font-medium);
+        border-bottom: 2px solid var(--primary-solid);
+        padding-bottom: var(--spacing-12);
+    }
+    .collection__link {
+        font-size: var(--font-xsmall);
+        padding: var(--spacing-8) var(--spacing-20);
+    }
+    
+}
+
+@media (max-width: 425px) {
+    .collection {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-12);
+        align-items: center;
+        padding: var(--spacing-16) auto;
+    }
+    .collection:nth-child(2) .collection__cover {
+        order: 2;
+    }
+    .slider__items .slider__item:nth-child(3) {
+        display: none;
+    }
+
+    .slider__title {
+        font-size: var(--font-large);
+    }
+    .card-item__licance {
+        font-size: var(--font-xxsmall);
+    }
+    .card-item__name {
+        font-size: var(--font-medium);
+    }
+    .card-item__price {
+        font-size: var(--font-xsmall);
+    }
+    .card-item__promo {
+        font-size: var(--font-xxsmall);
+    }
+
+}

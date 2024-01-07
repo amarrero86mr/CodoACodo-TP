@@ -14,3 +14,18 @@
     margin-top: var(--spacing-28);
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    .footer{
+        padding: var(--spacing-20);
+    }
+    .footer__copy{
+        font-size: 8px;
+    }
+    footer nav ul li {
+        font-size: 8px;
+    }
+    footer nav picture a img {
+        width: var(--spacing-68);
+    }
+}
