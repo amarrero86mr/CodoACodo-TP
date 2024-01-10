@@ -1,0 +1,32 @@
+.footer {
+    background-color: var(--dark-bg-solid);
+    color: var(--light-bg-solid);
+    padding: var(--spacing-68);
+}
+
+.navbar__items {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16);
+}
+
+.footer__copy {
+    margin-top: var(--spacing-28);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .footer{
+        padding: var(--spacing-20);
+    }
+    .footer__copy{
+        font-size: 8px;
+    }
+    footer nav ul li {
+        font-size: 8px;
+    }
+    footer nav picture a img {
+        width: var(--spacing-68);
+        margin: var(--spacing-8) var(--spacing-16)
+    }
+}

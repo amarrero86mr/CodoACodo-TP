@@ -1,0 +1,121 @@
+header {
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-36);
+    max-height: 114px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo{
+    max-width: 300px;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-20);
+    background-color: var(--dark-bg-solid);
+    z-index: 2;
+}
+
+.navbar__link {
+    max-width: 100%;
+    font-size: var(--font-medium-20);
+    padding: var(--spacing-8) var(--spacing-16);
+    /*display: inline-block*/
+    transition: background 0.3s ease-in-out;
+    position: relative;
+}
+
+.navbar__cart-img{
+    width: 25px;
+}
+
+.navbar__link:hover {
+    background-color: var(--primary-900);
+}
+
+/*submenu*/
+.submenu {
+    display: none;
+    position: absolute;
+    margin-top: var(--spacing-36);
+    background-color: var(--dark-bg-solid);
+    z-index: 2;
+}
+
+.wiht_submenu:hover .submenu{
+    display: block;
+}
+
+.submenu__link {
+    display: block;
+    padding: var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-medium-20);
+    transition: background 0.3s ease-in-out;
+}
+
+.submenu__link:hover {
+    background-color: var(--primary-900);
+}
+
+/*reesponsive*/
+#check-menu-responsiv{
+    display: none;
+}
+.checkbtn-menu-responsiv{
+    padding: var(--spacing-8) var(--spacing-16);
+    position: relative;
+    display: none;
+}
+
+.iso-funco {
+    display: none;
+    max-width: 75px;
+}
+
+.img-menu-responsiv {
+    width: 45px;
+}
+
+@media (max-width: 768px) {
+        
+    .checkbtn-menu-responsiv {
+        display: block;
+    }
+    .navbar {
+        align-items: center;
+    }
+
+    .navbar__menu{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 114px;
+    }
+
+    #check-menu-responsiv:checked + .navbar__menu {
+        display: flex;
+    }
+
+    .submenu {
+        display: inline;
+        position: relative;
+        margin-top: 0;
+        
+    }
+}
+
+@media (max-width: 425px) {
+    .logo-funco {
+        display: none;
+    }
+    .iso-funco {
+        display: block;
+    }
+}

@@ -1,0 +1,55 @@
+*,
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--base-font);
+    font-size: 62%;
+    color: var(--dark-solid);
+}
+
+a {
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+}
+
+header,
+footer {
+    font-family: var(--alternative-font);
+    color: var(--light-font-solid);
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+p {
+    font-size: var(--font-medium);
+}
+
+img{
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wiht_icon {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: var(--spacing-8);
+    }
+}
