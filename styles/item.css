@@ -104,3 +104,60 @@
 .item__link-pagos-detail {
     border-bottom: 2px solid var(--secondary-solid);
 }
+
+@media (max-width: 768px) {
+    .item__content {
+        display: inline-flex;
+        flex-direction: column-reverse;
+        margin: var(--spacing-24);
+    }
+    .item__cover {
+        max-width: 350px;
+    }   
+    .item__selected {
+        gap: var(--spacing-12);
+    }
+    
+}
+
+@media (max-width: 425px) {
+    .item__selected-licenc{
+        font-size: var(--font-xsmall);
+    }
+    .item__selected-name{
+        font-size: var(--font-xlarge);
+    }
+    .item__selected-descr {
+        font-size: var(--font-medium);
+        width: 400px;
+    }
+    .item__selected-price {
+        font-size: var(--font-large);
+    }
+    
+    .item__form {
+        height: var(--spacing-38);
+        gap: 6px;
+    }
+    
+    .item__control-input {
+        width: var(--spacing-128);
+        text-align: center;
+        justify-content: center;
+    }
+    .item__control-add {
+        width: var(--spacing-20);
+    }
+    .item__control-subtract {
+        width: var(--spacing-20);
+    }
+        
+    .item__control-button {
+        font-size: var(--font-medium);
+        
+    }
+    
+    .item__link-pagos {
+        font-size: var(--font-xxsmall);
+    }
+}
