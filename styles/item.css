@@ -1,0 +1,106 @@
+.item__content {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-38);
+    margin: var(--spacing-52) auto;
+    align-items: center;
+
+}
+
+.item__cover {
+    max-width: 550px;
+}
+
+.item__cover-back {
+    display: none;
+}
+.item__cover:hover .item__cover-front{
+    display: none;
+}
+.item__cover:hover .item__cover-back{
+    display: inline;
+}
+
+
+.item__selected {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16);
+}
+.item__selected-licenc{
+    font-size: var(--font-small);
+    font-weight: 500;
+}
+.item__selected-name{
+    font-size: var(--font-jumbo);
+    font-weight: 700;
+}
+.item__selected-descr {
+    font-size: var(--font-large);
+    font-weight: 400;
+    width: 500px;
+}
+.item__selected-price {
+    font-size: var(--font-jumbo);
+    font-weight: 400;
+}
+
+.item__form {
+    display: flex;
+    height: var(--spacing-52);
+    gap: var(--spacing-8);
+}
+
+.item__subcontrol {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+}
+.item__control-input {
+    width: var(--spacing-128);
+    text-align: center;
+}
+.item__control-add {
+    color: var(--light-bg-solid);
+    background-color: var(--grey-solid);
+    border: none;
+    border-radius: 2px;
+    width: var(--spacing-24);
+    height: var(--spacing-24);
+}
+.item__control-add:active {
+    background-color: var(--dark-900);
+}
+.item__control-subtract {
+    color: var(--light-bg-solid);
+    background-color: var(--grey-solid);
+    border: none;
+    border-radius: 2px;
+    width: var(--spacing-24);
+    height: var(--spacing-24);
+}
+.item__control-subtract:active {
+    background-color: var(--dark-900);
+}
+
+.item__control-button {
+    text-wrap: nowrap;
+    font-size: var(--font-medium-20);
+    padding: var(--spacing-12);
+    color: var(--light-bg-solid);
+    background-color: var(--primary-solid);
+    border: none;
+    border-radius: 2px;
+}
+.item__control-button:active {
+    background-color: var(--secondary-900);
+}
+
+.item__link-pagos {
+    color: var(--secondary-solid);
+    font-size: var(--font-xsmall);
+    font-weight: 700;
+}
+.item__link-pagos-detail {
+    border-bottom: 2px solid var(--secondary-solid);
+}
