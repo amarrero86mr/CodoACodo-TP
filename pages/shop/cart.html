@@ -44,81 +44,93 @@
             </ul>
         </nav>
     </header><!-- FIN HEADER -->
-    <main>
-        <section>
-            <h2>CARRITO DE COMPRAS</h2>
-            <article>
-                <div>DETALLE DE PRODUCTO</div>
-                <div>CANTIDAD</div>
-                <div>TOTAL</div>
+    <main class="container">
+        <section class="cart__header-content">
+            <h2 class="cart__header-title">CARRITO DE COMPRAS</h2>
+            <article class="cart__row-header border-box">
+                <p class="row-header-product row-header-font">DETALLE DE PRODUCTO</p>
+                <p class="row-header-cant row-header-font">CANTIDAD</p>
+                <p class="row-header-total row-header-font">TOTAL</p>
             </article>
-            <article>
-                <div>
-                    <picture>
-                        <img src="../images/star-wars/baby-yoda-1.webp" width="115px" height="115px" alt="Star Wars Grogu Funko Collectible Figure">
+            <article class="cart__row-secondary border-box">
+                <div class="row-second-product">
+                    <picture class="row-second-cover">
+                        <img class="row-second-cover-img" src="/images/star-wars/baby-yoda-1.webp" width="115px" height="115px" alt="Star Wars Grogu Funko Collectible Figure">
                     </picture>
-                    <h4>BABY YODA BLUEBALL</h4>
-                    <p>STAR WARS</p>
-                    <p>precio: $ 1799,99</p>
+                    <div class="row-second-product-descr">
+                        <h4 class="row-second-product-name">BABY YODA BLUEBALL</h4>
+                        <p class="row-second-product-licenc">STAR WARS</p>
+                        <p class="row-second-product-price">precio: $ 1799,99</p>
+                    </div>
                 </div>
-                <div>
-                    <input type="number" min="0" step="1" value="0" name="" id="cantidad" placeholder="1">
-                    <button class="add" name="cantidad">+</button>
-                    <button class="subtract" name="cantidad">-</button>
+                <div class="row-second-cant">
+                    <input class="row-second-cant-input" type="number" min="0" step="1" value="0" name="" id="cantidad" placeholder="1">
+                    <div class="row-second-cant-sub">
+                        <button class="add button-masmemos" name="cantidad">+</button>
+                        <button class="subtract button-masmemos" name="cantidad">-</button>
+                    </div>
                 </div>
-                <div>
+                <div class="row-second-total">
                     <p>$ 1799,99</p>
                 </div>
-                <div>
-                    <img src="../images/icons/delete_circle.svg" alt="favicon de canselar seleccion a comprar">
+                <div class="row-second-delet">
+                    <button class="row-second-delet-button" ><img src="/images/icons/delete_circle.svg" alt="favicon de canselar seleccion a comprar"></button>
                 </div>
             </article>
-            <article>
-                <div>
-                    <picture>
-                        <img src="../images/pokemon/pidgeotto-1.webp" width="115px" height="115px" alt="Pokemon Pidgeotto Funko Collectible Figure">
+            <article class="cart__row-secondary border-box">
+                <div class="row-second-product">
+                    <picture class="row-second-cover">
+                        <img class="row-second-cover-img" src="/images/pokemon/pidgeotto-1.webp" width="115px" height="115px" alt="Pokemon Pidgeotto Funko Collectible Figure">
                     </picture>
-                    <h4>PIDGEOTTO</h4>
-                    <p>POKEMON</p>
-                    <p>precio: $ 1799,99</p>
+                    <div class="row-second-product-descr">
+                        <h4 class="row-second-product-name">PIDGEOTTO</h4>
+                        <p class="row-second-product-licenc">POKEMON</p>
+                        <p class="row-second-product-price">precio: $ 1799,99</p>
+                    </div>
                 </div>
-                <div>
-                    <input type="number" min="0" step="1" value="0" name="" id="cantidad" placeholder="1">
-                    <button class="add" name="cantidad">+</button>
-                    <button class="subtract" name="cantidad">-</button>
+                <div class="row-second-cant">
+                    <input class="row-second-cant-input" type="number" min="0" step="1" value="0" name="" id="cantidad" placeholder="1">
+                    <div class="row-second-cant-sub">
+                        <button class="add button-masmemos" name="cantidad">+</button>
+                        <button class="subtract button-masmemos" name="cantidad">-</button>
+                    </div>
                 </div>
-                <div>
+                <div class="row-second-price">
                     <p>$ 1799,99</p>
                 </div>
-                <div>
-                    <img src="../images/icons/delete_circle.svg" alt="favicon de canselar seleccion a comprar">
+                <div class="row-second-delet">
+                    <button class="row-second-delet-button" ><img src="/images/icons/delete_circle.svg" alt="favicon de canselar seleccion a comprar"></button>
                 </div>
             </article>
         </section>
-        <section>
-            <h3>RESUMEN</h3>
-            <table>
-                <tbody>
-                    <tr>
-                      <th>CANTIDAD DE ELEMENTOS</th>
-                      <td>3</td>
-                    </tr>
-                    <tr>
-                      <th>SUBTOTAL</th>
-                      <td>$ 5399,97</td>
-                    </tr>
-                    <tr>
-                      <th>ENVIO</th>
-                      <td>$ 0,00</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                      <th>TOTAL</th>
-                      <td>$ 5399,97</td>
-                    </tr>
-                  </tfoot>
-              </table>
+        <section class="cart__resumen-content">
+            <div class="cart__resumen">
+                <h3 class="cart__header-title cart__resumen-title">RESUMEN</h3>
+                <div class="resumen__table-content">
+                    <table class="resumen__table">     
+                        <tr class="table__row">
+                          <td class="table__row-tilte">CANTIDAD DE ELEMENTOS</td>
+                          <td class="table__row-value">2</td>
+                        </tr>
+                        <tr class="table__row">
+                          <td class="table__row-tilte">SUBTOTAL</td>
+                          <td class="table__row-value">$ 3599,98</td>
+                        </tr>
+                        <tr class="table__row">
+                          <td class="table__row-tilte">ENVIO</td>
+                          <td class="table__row-value">$ 0,00</td>
+                        </tr>
+                        
+                        <tfoot class="table__foot">
+                            <tr class="table__row">
+                                <td class="table__row-tilte">TOTAL</td>
+                                <td class="table__row-value">$ 3599,98</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <button class="cart__button" type="submit">IR A PAGAR</button>
+            </div>
         </section>
         
     </main>
