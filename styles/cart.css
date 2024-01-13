@@ -13,13 +13,14 @@
 .cart__row-header {
     display: grid;
     grid-template-areas:"prod cant total";
+    gap: var(--spacing-20);
 }
 .border-box {
     padding: var(--spacing-16) var(--spacing-128);
     border:none;
     border-radius: 12px;
     box-shadow: 0px 0px 10px 0px var(--dark-bg-500);
-    margin: var(--spacing-38) 0;
+    margin: var(--spacing-38) auto;
     background-color: var(--light-bg-solid);
 }
 .row-header-font {
@@ -46,9 +47,9 @@
     align-items: center;
     gap: var(--spacing-8);
 }
-.row-second-cover{
+.row-second-cover-img{
     width: 118px;
-    height: auto;
+    height: 118px;
 }
 .row-second-product-name {
     font-size: var(--font-large);
@@ -145,4 +146,7 @@ tfoot {
     width: 100%;
     height: var(--spacing-68);
     font-size: var(--font-xlarge);
+}
+.cart__button:active {
+    background-color: var(--secondary-solid);
 }
