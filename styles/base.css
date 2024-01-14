@@ -49,6 +49,10 @@ img{
 }
 
 @media (max-width: 768px) {
+    body {
+        max-width: 768;
+        box-sizing:border-box;
+    }
     main {
         padding: var(--spacing-8);
     }

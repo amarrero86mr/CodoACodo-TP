@@ -1,0 +1,108 @@
+.contact__form {
+    max-width: 550px;
+    margin: var(--spacing-68) 0;
+    font-family: var(--alternative-font);
+}
+
+.form__title {
+    margin: var(--spacing-24) auto;
+    font-size: var(--font-jumbo);
+    font-weight: 700;
+}
+.form__section {
+    margin: var(--spacing-38) auto;
+    font-size: var(--font-medium-20);
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-12);
+    align-items: center;
+}
+.width_textarea{
+    align-items: baseline;
+}
+.form__label {
+    width: 100px
+}
+.form__input {
+    width: 450px;
+    height: 30px;
+}
+.form__textarea {
+    width: 450px;
+    height: 200px;
+}
+span {
+    color: var(--primary-solid);
+}
+.sectio-left{
+    display: flex;
+    justify-content: end;
+    margin-left: 150px;
+}
+.form__submit {
+    appearance: none;
+    border: none;
+    background-color: var(--primary-solid);
+    color: var(--light-bg-solid);
+    width: 100px;
+    height: 35px;
+    font-size: 20px;
+}
+.form__submit:active {
+    background-color: var(--secondary-solid);
+}
+
+.contact__data {
+    margin: var(--spacing-68) auto;
+    font-family: var(--alternative-font);
+    
+}
+.data__section-social {
+    margin: var(--spacing-38) auto;
+    display: flex;
+    gap: var(--spacing-38);
+}
+#social-link-icono {
+    color: var(--dark-bg-900);
+}
+#social-link-icono:hover {
+    color: var(--primary-solid);
+}
+.data__section-second{
+    display: flex;
+    align-items: baseline;
+    font-size: var(--font-xxsmall);
+    gap: var(--spacing-8);
+    padding: var(--spacing-8);
+    margin: var(--spacing-8);
+}
+.data-title{
+    width: 75px;
+}
+
+@media (max-width: 425px) {
+    .contact__form {
+        max-width: 550px;
+        margin: var(--spacing-38) 0;
+    }
+    .form__title {
+        margin: var(--spacing-12) auto;
+        font-size: var(--font-large);
+    }
+    .form__section {
+        margin: var(--spacing-16) auto;
+        font-size: var(--font-small);
+        gap: var(--spacing-12);
+    }
+    .data__section-social {
+        margin: var(--spacing-16);
+        display: flex;
+        justify-content: space-around;
+        gap: var(--spacing-38);
+    }
+    .contact__data {
+        margin: var(--spacing-38) auto;
+        
+    }
+}

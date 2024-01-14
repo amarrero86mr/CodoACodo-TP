@@ -12,7 +12,7 @@
         <nav class="container navbar">
             <picture class="navbar__logo">
                 <a href="/pages/home.html">
-                    <img src="/images/branding/logo_light_horizontal.svg" alt="Logo de FunkoShop">
+                    <img class="logo-funco" src="/images/branding/logo_light_horizontal.svg" alt="Logo de FunkoShop">
                     <img class="iso-funco" src="/images/branding/isotype.svg" alt="isotipo de FunkoShop">
                 </a>
             </picture>
@@ -27,40 +27,39 @@
             </ul>
         </nav>
     </header><!-- FIN HEADER -->
-    <main>
-        <section>
-            <h2>CREA TU CUENTA</h2>
-            <p>Completa el formulario para ser parte del mundo de los Funkos</p>
+    <main class="container">
+        <section class="section__header">
+            <h2 class="titlec-center">CREA TU CUENTA</h2>
+            <p class="text-center">Completa el formulario para ser parte del mundo de los Funkos</p>
         </section> 
-        <section>
-            <form action="https://formsubmit.co/amarrero86mr@gmail.com" method="POST" name="registro">
-                <section>
-                    <div>
-                        <label for="nombre">Nombre: </label>
-                        <input name="nombre" id="nombre" type="text" placeholder="John">
+        <section class="section__secondari-center">
+            <form class="form__main" action="https://formsubmit.co/amarrero86mr@gmail.com" method="POST" name="registro">
+                <section  class="form__section">
+                    <div class="form__div">
+                        <label class="form__label" for="nombre">Nombre: </label>
+                        <input class="form__input" name="nombre" id="nombre" type="text" placeholder="John">
                     </div>
-                    <div>
-                        <label for="apellido">Apellido: </label>
-                        <input name="apellido" id="apellido" type="text" placeholder="Doe">
+                    <div class="form__div">
+                        <label class="form__label" for="apellido">Apellido: </label>
+                        <input class="form__input" name="apellido" id="apellido" type="text" placeholder="Doe">
                     </div>
-                    <div>
-                        <label for="email">E-mail: </label>
-                        <input name="email" id="email" type="email" placeholder="johndoe@correo.com">
+                    <div class="form__div">
+                        <label class="form__label" for="email">E-mail: </label>
+                        <input class="form__input" name="email" id="email" type="email" placeholder="johndoe@correo.com">
                     </div>
-                    <div>
-                        <label for="contrasenia">Contraseña: </label>
-                        <input name="contrasenia" id="contrasenia" type="password" placeholder="********">
+                    <div class="form__div">
+                        <label class="form__label" for="contrasenia">Contraseña: </label>
+                        <input class="form__input" name="contrasenia" id="contrasenia" type="password" placeholder="********">
                     </div>
-                    <div>
-                        <label for="contrasenia-repit">Repita Contraseña: </label>
-                        <input name="contrasenia-repit" id="contrasenia-repit" type="password" placeholder="********">
+                    <div class="form__div">
+                        <label class="form__label" for="contrasenia-repit">Repita Contraseña: </label>
+                        <input class="form__input" name="contrasenia-repit" id="contrasenia-repit" type="password" placeholder="********">
                     </div>
                 </section>
-                <section>
-                    <button type="submit">REGISTRAR</button>
-                    <label for="termiso-condiciones"></label>
-                        <input type="checkbox" id="termiso-condiciones" name="termiso-condiciones">
-                        Acepto <a href="../public/termsandconditions.html">Términos y Condiciones</a>
+                <section class="form__section-terms">
+                    <button class="form__button" type="submit">REGISTRAR</button>
+                    <input class="form__check-terms" type="checkbox" id="termiso-condiciones" name="termiso-condiciones">
+                    <label class="form__label-terms" for="termiso-condiciones">Acepto <a class="form__link" href="../public/termsandconditions.html">Términos y Condiciones</a>
                     </label>
                 </section>
 

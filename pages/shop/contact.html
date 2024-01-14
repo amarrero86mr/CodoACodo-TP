@@ -47,74 +47,69 @@
             </ul>
         </nav>
     </header><!-- FIN HEADER -->
-    <main >
-        <form action="" method="post">
-            <h2 >CONTACTENOS</h2>
-            <div>
-                <label for="name">
+    <main class="container">
+        <form class="contact__form" action="" method="post">
+            <h2 class="form__title">CONTACTENOS</h2>
+            <div class="form__section">
+                <label class="form__label" for="name">
                     Nombre <span>*</span>
                 </label>
-                <input  type="text" name="name" required>
+                <input class="form__input" type="text" name="name" required>
             </div>
-            <div >
-                <label  for="email">
+            <div class="form__section">
+                <label class="form__label" for="email">
                     Email <span>*</span>
                 </label>
-                <input  type="email" name="email" required>
+                <input class="form__input" type="email" name="email" required>
             </div>
-            <div >
-                <label  for="phone">
+            <div class="form__section">
+                <label class="form__label" for="phone">
                     Teléfono
                 </label>
-                <input  type="text" name="phone">
+                <input class="form__input" type="text" name="phone">
             </div>
-            <div >
-                <label  for="msj">
+            <div class="form__section width_textarea">
+                <label class="form__label" for="msj">
                     Mensaje <span>*</span>
                 </label>
-                <textarea  name="msj" cols="30" rows="5" required></textarea>
+                <textarea class="form__textarea" name="msj" cols="30" rows="5" required></textarea>
             </div>
-            <div >
-                <input type="submit" value="ENVIAR">
+            <div class="form__section sectio-left">
+                <button class="form__submit " type="submit" value="ENVIAR">ENVIAR</button>
             </div>
         </form>
-        <section >
-            <article >
-                <a  href="">
-                    <iconify-icon icon="entypo-social:facebook-with-circle" style="color: var(--dark-bg-900)" ;
-                        width="60" height="60"></iconify-icon>
+        <section class="contact__data">
+            <article class="data__section-social">
+                <a class="data__social-link" href="">
+                    <iconify-icon icon="entypo-social:facebook-with-circle" id="social-link-icono" width="60" height="60"></iconify-icon>
                 </a>
-                <a  href="">
-                    <iconify-icon icon="entypo-social:instagram-with-circle" style="color: var(--dark-bg-900)" ;
-                        width="60" height="60"></iconify-icon>
+                <a class="data__social-link" href="">
+                    <iconify-icon icon="entypo-social:instagram-with-circle" id="social-link-icono" width="60" height="60"></iconify-icon>
                 </a>
-                <a  href="">
-                    <iconify-icon icon="entypo-social:pinterest-with-circle" style="color: var(--dark-bg-900)" ;
-                        width="60" height="60"></iconify-icon>
+                <a class="data__social-link" href="">
+                    <iconify-icon icon="entypo-social:pinterest-with-circle" id="social-link-icono" width="60" height="60"></iconify-icon>
                 </a>
-                <a  href="">
-                    <iconify-icon icon="entypo-social:twitter-with-circle" style="color: var(--dark-bg-900)" ;
-                        width="60" height="60">
+                <a class="data__social-link" href="">
+                    <iconify-icon icon="entypo-social:twitter-with-circle" id="social-link-icono" width="60" height="60">
                     </iconify-icon>
                 </a>
             </article>
-            <article >
-                <h4 >TELEFONO</h4>
-                <p >(011) 4555-3333</p>
-            </article>
-            <article >
-                <h4 >EMAIL</h4>
-                <div >
-                    <h6 >CONSULTAS</h6>
-                    <p >consultas@funkoshop.com.ar</p>
+            <article class="contact__data">
+                <div class="data__section-second">
+                    <h4 class="data-title">TELEFONO</h4>
+                    <p class="data-descr">(011) 4555-3333</p>
                 </div>
-                <div >
-                    <h6 >VENTAS</h6>
-                    <p >ventas@funkoshop.com.ar</p>
+                <div class="data__section-second">
+                    <h4 class="data-title">EMAIL</h4>
+                    <p class="data-descr">consultas@funkoshop.com.ar</p>
                 </div>
-                <div >
-                    <h6 >PEDIDOS</h6>
-                    <p >pedidos@funkoshop.com.ar</p>
+                <div class="data__section-second">
+                    <h4 class="data-title">VENTAS</h4>
+                    <p class="data-descr">ventas@funkoshop.com.ar</p>
+                </div>
+                <div class="data__section-second">
+                    <h4 class="data-title">PEDIDOS</h4>
+                    <p class="data-descr">pedidos@funkoshop.com.ar</p>
                 </div>
             </article>
         </section>

@@ -20,7 +20,7 @@
     gap: var(--spacing-28);
 }
 
-.form__section {
+.form__section-sider {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-16);
@@ -79,4 +79,41 @@
 
 .form__option-box-xs:checked {
     appearance: auto;
+}
+.filter_icon{
+    position: relative;
+    display: none;
+    align-items: center;
+}
+.filter_check {
+    display: none;
+}
+.filter_icon img{
+    width: 35px;
+}
+
+@media (max-width: 768px) {
+    .main__shop {
+        display: block;
+        margin: var(--spacing-28) auto;
+    }
+    
+    .filter_icon{
+        display: flex;
+        align-items: center;
+        font-size: var(--font-medium);
+    }
+    .sidebar {
+        padding: var(--spacing-8);
+        background-color: var(--grey-900);
+        position: absolute;
+        left: -100%;
+        z-index: 2;
+        transition: all 0.7s ease-in-out;
+    }
+
+    .filter_check:checked ~ .sidebar{
+        left: 5px;
+    }
+    
 }
