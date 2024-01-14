@@ -1,0 +1,68 @@
+.header__section {
+    margin: var(--spacing-52) 0;
+    font-size: var(--font-jumbo);
+}
+.header__title {
+    font-family: var(--alternative-font);
+}
+
+.section__secondary {
+    font-family: var(--alternative-font);
+}
+
+.form__main {}
+
+.form__section {
+    gap: var(--spacing-28);
+}
+.form__section-secondary {}
+
+.form__div {
+    gap: var(--spacing-12);
+}
+
+.form__label {}
+
+.label-create {
+    font-size: var(--font-medium);
+    font-weight: 500;
+}
+
+.input-create {
+    margin: var(--spacing-8);
+    padding: 4px;
+}
+#codigo {width: 120px;}
+#precio {width: 100px;}
+#stock {width: 70px;}
+#descuento {width: 70px;}
+
+.form__select {
+    font-family: var(--alternative-font);
+    font-size: 18px;
+}
+
+#categoria {width: 200px;}
+#licencia {width: 200px;}
+#cuotas {width: 200px;}
+
+.form__textarea-normal {
+    margin: var(--spacing-16) 0;
+    padding: var(--spacing-8);
+    font-size: var(--font-large);
+    max-width: 850px;
+    max-height: 200px;
+}
+
+.form__input-archive {}
+
+.form__div-buttons{
+    display: flex;
+    gap: var(--spacing-20);
+    align-items: center;
+}
+.button-create {
+    width: 175px;
+    align-items: baseline;
+    max-width: 125px;
+}

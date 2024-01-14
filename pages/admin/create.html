@@ -29,76 +29,83 @@
     </header><!-- FIN HEADER -->
     <main class="container">
         <section class="header__section">
-            <h2 class="heades__title">CREAR NUEVO ITEM</h2>
+            <h2 class="header__title">CREAR NUEVO ITEM</h2>
         </section> 
         <section class="section__secondary">
             <form class="form__main" action="https://formsubmit.co/amarrero86mr@gmail.com" method="POST" name="create">
-                <section>
-                    <div>
-                        <label for="categoria">Categoría:
-                            <select name="categoria" id="categoria">
-                                <option selected>Seleccionar</option>
-                                <option value="figuras">Figuras</option>
-                                <option value="llaveros">Llaveros</option>
-                                <option value="remeras">Remeras</option>
-                            </select>
-                            <img src="../images/icons/arrow-down-icon.svg" alt="favicon flecha hacia abajo">
+                <section class="form__section">
+                    <div class="form__div">
+                        <label class="form__label" for="categoria">Categoría:
                         </label>
+                        <select class="form__option-box form__select" name="categoria" id="categoria">
+                            <option selected>Seleccionar</option>
+                            <option value="figuras">Figuras</option>
+                            <option value="llaveros">Llaveros</option>
+                            <option value="remeras">Remeras</option>
+                        </select>
                     </div>
-                    <div>
-                        <label for="licencia">Licencia:
-                            <select name="licencia" id="licencia">
-                                <option selected value="select" class="">Seleccionar</option>
-                                <option value="Naruto Shippuden">Naruto Shippuden</option>
-                                <option value="Star Wars">Star Wars</option>
-                                <option value="Pokemon">Pokemon</option>
-                                <option value="Harry Potter">Harry Potter</option>
-                            </select>
-                            <img src="../images/icons/arrow-down-icon.svg" alt="favicon flecha hacia abajo">
+                    <div class="form__div">
+                        <label class="form__label" for="licencia">Licencia:
                         </label>
+                        <select class="form__option-box form__select" name="licencia" id="licencia">
+                            <option selected value="select" class="">Seleccionar</option>
+                            <option value="Naruto Shippuden">Naruto Shippuden</option>
+                            <option value="Star Wars">Star Wars</option>
+                            <option value="Pokemon">Pokemon</option>
+                            <option value="Harry Potter">Harry Potter</option>
+                        </select>
                     </div>
                 </section>
-                <section>
-                    <div>
-                        <label for="nombre-producto">Nombre del producto:
-                            <input type="text" name="nombre" id="nombre-producto" placeholder="Nombre del Producto">
-                        </label>
+                <section class="form__section-secondary">
+                    <div class="form__div">
+                        <label class="form__label label-create" for="nombre-producto">Nombre del producto:</label>
+                        <input class="form__input input-create" type="text" name="nombre" id="nombre-producto" placeholder="Nombre del Producto">
                     </div>
                     <div>
-                        <textarea name="detalle-producto" id="" cols="100" rows="10" placeholder="Descripción del producto"></textarea>
+                        <textarea class="form__textarea-normal" name="detalle-producto" id="" cols="100" rows="10" placeholder="Descripción del producto"></textarea>
                     </div>
                 </section>
-                <section>
-                    <label for="codigo">SKU:<input name="codigo" id="codigo" type="text" placeholder="NAR001012"></label>
-                    <label for="precio">Precio:<input name="precio" id="precio" type="number" placeholder="0000,00"></label>
-                    <label for="stock">Strock:<input name="stock" id="stock" type="number" placeholder="0"></label>
-                </section>
-                <section>
-                    <div>
-                        <label for="descuento">Descuento:<input name="descuento" id="descuento" type="number" placeholder="0%"></label>
+                <section class="form__section">
+                    <div class="form__div">
+                        <label for="codigo">SKU:</label>
+                        <input class="form__input input-create" name="codigo" id="codigo" type="text" placeholder="NAR001012">
                     </div>
-                    <div>
+                    <div class="form__div">
+                        <label for="precio">Precio:</label>
+                        <input class="form__input input-create" name="precio" id="precio" type="number" placeholder="0000,00">
+                    </div>
+                    <div class="form__div">
+                        <label for="stock">Strock:</label>
+                        <input class="form__input input-create" name="stock" id="stock" type="number" placeholder="0">
+                    </div>
+                </section>
+                <section class="form__section">
+                    <div class="form__div">
+                        <label for="descuento">Descuento:</label>
+                        <input class="form__input input-create" name="descuento" id="descuento" type="number" placeholder="0%">
+                    </div>
+                    <div class="form__div">
                         <label for="cuotas">Cuotas:
-                            <select name="cuotas" id="cuotas">
+                            <select class="form__option-box form__select" name="cuotas" id="cuotas">
                                 <option value="3" selected>3 Cuotas sin interés</option>
                                 <option value="6">6 Cuotas sin interés</option>
                                 <option value="12">12 Cuotas sin interés</option>
                             </select>    
                         </label>
-                        <img src="../images/icons/arrow-down-icon.svg" alt="favicon flecha hacia abajo">
                     </div>
                 </section>
-                <section>
-                    <div>
-                        <label for="archivos">Imagenes: <input name="archivos" id="archivos" type="file" multiple accept=".jpg, .png"></label>
+                <section class="form__section">
+                    <div class="form__div">
+                        <label for="archivos">Imagenes: </label>
+                        <input class="input-create-archive" name="archivos" id="archivos" type="file" multiple accept=".jpg, .png">
                     </div>
                 </section>
-                <section>
-                    <button type="submit">Agregar Producto</button>
-                    <button type="reset">Limpiar</button>
+                <section class="form__section">
+                    <div class="form__div-buttons">
+                        <button class="form__button button-create" type="submit">Agregar Producto</button>
+                        <button class="form__button button-create" type="reset">Limpiar</button>
+                    </div>
                 </section>
-
-
             </form>
         </section>
     </main>
