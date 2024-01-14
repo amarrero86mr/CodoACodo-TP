@@ -97,10 +97,10 @@
         justify-content: space-between;
         gap: var(--spacing-8);
     }
-    .form__div label {
+    .form__div .form__label {
         align-self:flex-start;
     }
-    .form__div input {
+    .form__div .form__input {
         align-self:flex-end;
     }
 
