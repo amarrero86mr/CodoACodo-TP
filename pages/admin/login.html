@@ -27,31 +27,38 @@
             </ul>
         </nav>
     </header><!-- FIN HEADER -->
-    <main>
-        <section>
-            <h2>INGRESAR A MI CUENTA</h2>
+    <main class="container">
+        <section class="section__header">
+            <h2 class="titlec-center">INGRESAR A MI CUENTA</h2>
         </section> 
-        <section>
-            <form action="https://formsubmit.co/amarrero86mr@gmail.com" method="POST" name="login">
-                <section>
-                    <div>
-                        <label for="email">E-mail: </label>
-                        <input name="email" id="email" type="email" placeholder="johndoe@correo.com">
+        <section class="section__secondari-center">
+            <form class="form__main" action="https://formsubmit.co/amarrero86mr@gmail.com" method="POST" name="login">
+                <section class="form__section">
+                    <div class="form__div">
+                        <label class="form__label" for="email">E-mail: </label>
+                        <input class="form__input" name="email" id="email" type="email" placeholder="johndoe@correo.com">
                     </div>
-                    <div>
-                        <label for="contrasenia">Contraseña: </label>
-                        <input name="contrasenia" id="contrasenia" type="password" placeholder="********">
+                    <div class="form__div">
+                        <label class="form__label" for="contrasenia">Contraseña: </label>
+                        <input class="form__input" name="contrasenia" id="contrasenia" type="password" placeholder="********">
                     </div>
                 </section>
-                <section>
-                    <div>
-                        <button type="submit">INGRESAR</button>
-                        <label for="recordarme">
-                            <input type="checkbox" id="recordarme" name="recordarme">
+                <section class="form__section-terms">
+                    <div class="form__login-acept">
+
+
+
+                        <button class="form__button" type="submit">INGRESAR</button>
+                        <input class="form__check-terms" type="checkbox" id="recordarme" name="recordarme">
+                        <label class="form__label-terms" for="recordarme">
                             Recordarme
                         </label>
                     </div>
-                    <a href="../public/lostmypast"></a>
+
+
+
+
+                    <a class="form__link-lost" href="/public/lostmypast">Olvidé mi contraseña</a>
                 </section>
 
 
