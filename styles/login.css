@@ -1,0 +1,37 @@
+.form__section-center-acces {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-38);
+    margin-bottom: var(--spacing-68);
+}
+
+.form__login-acces {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-20);
+    align-items: center;
+    margin-bottom: var(--spacing-8);
+}
+
+.form__check-acces {
+    margin-left: var(--spacing-36);
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: solid 2px var(--dark-solid);
+    border-radius: 4px;
+}
+.form__check-acces:checked {
+    appearance: auto;
+}
+
+.form__label-acces {
+    font-size: var(--font-medium);
+}
+
+.form__link-lost {
+    color: var(--secondary-solid);
+    font-size: var(--font-medium);
+}

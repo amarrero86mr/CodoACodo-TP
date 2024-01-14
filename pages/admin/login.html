@@ -12,7 +12,7 @@
         <nav class="container navbar">
             <picture class="navbar__logo">
                 <a href="/pages/home.html">
-                    <img src="/images/branding/logo_light_horizontal.svg" alt="Logo de FunkoShop">
+                    <img class="logo-funco" src="/images/branding/logo_light_horizontal.svg" alt="Logo de FunkoShop">
                     <img class="iso-funco" src="/images/branding/isotype.svg" alt="isotipo de FunkoShop">
                 </a>
             </picture>
@@ -28,36 +28,29 @@
         </nav>
     </header><!-- FIN HEADER -->
     <main class="container">
-        <section class="section__header">
-            <h2 class="titlec-center">INGRESAR A MI CUENTA</h2>
+        <section class="section__header-center">
+            <h2 class="title-center">INGRESAR A MI CUENTA</h2>
         </section> 
         <section class="section__secondari-center">
             <form class="form__main" action="https://formsubmit.co/amarrero86mr@gmail.com" method="POST" name="login">
-                <section class="form__section">
-                    <div class="form__div">
+                <section class="form__section-center">
+                    <div class="form__div-center">
                         <label class="form__label" for="email">E-mail: </label>
                         <input class="form__input" name="email" id="email" type="email" placeholder="johndoe@correo.com">
                     </div>
-                    <div class="form__div">
+                    <div class="form__div-center">
                         <label class="form__label" for="contrasenia">Contraseña: </label>
                         <input class="form__input" name="contrasenia" id="contrasenia" type="password" placeholder="********">
                     </div>
                 </section>
-                <section class="form__section-terms">
-                    <div class="form__login-acept">
-
-
-
-                        <button class="form__button" type="submit">INGRESAR</button>
-                        <input class="form__check-terms" type="checkbox" id="recordarme" name="recordarme">
-                        <label class="form__label-terms" for="recordarme">
+                <section class="form__section-center-acces">
+                    <div class="form__login-acces">
+                        <button class="form__button btn_ingresar" type="submit">INGRESAR</button>
+                        <input class="form__check-acces" type="checkbox" id="recordarme" name="recordarme">
+                        <label class="form__label-acces" for="recordarme">
                             Recordarme
                         </label>
                     </div>
-
-
-
-
                     <a class="form__link-lost" href="/public/lostmypast">Olvidé mi contraseña</a>
                 </section>
 
