@@ -27,24 +27,23 @@
             </ul>
         </nav>
     </header><!-- FIN HEADER -->
-    <main>
-        <section>
-            <label for="buscar">
-                <img src="../images/icons/search_icon.svg" alt="favicon de buscar">
-                <input type="text" id="buscar" placeholder="código, nombre o categoría">
+    <main class="container">
+        <section class="admin__first-section">
+            <label class="admin__label" for="buscar">
+                <img class="icon__serch" src="/images/icons/search_icon.svg" alt="favicon de buscar">
             </label>
+            <input class="admin__input" type="text" id="buscar" placeholder="código, nombre o categoría">
         </section>
-        <section>
-            <article>
-                <h2>LISTADO DE PRODUCTOS</h2>
-                <label for="agregar">AGREGAR
-                    <a href="../public/create.html">
-                        <img src="../images/icons/add-icon.svg" alt="Fabicon de agregar">
+        <section class="admin__section">
+            <article class="admin__section-article">
+                <h2 class="admin__title">LISTADO DE PRODUCTOS</h2>
+               
+                    <a class="admin__label-link" href="/pages/admin/create.html">AGREGAR<img class="icon__serch" src="/images/icons/add-icon.svg" alt="Fabicon de agregar">
                     </a>
-                </label>
+                
             </article>
             <article>
-                <table>
+                <table class="admin__table-main">
                     <thead>
                         <th>ID</th>
                         <th>Código</th>
@@ -53,14 +52,14 @@
                         <th></th>
                         <th></th>
                     </thead>
-                    <tbody>
+                    <tbody class="admin__table-body">
                         <tr>
                             <td>1</td>
                             <td>STW001001</td>
                             <td>Baby Yoda Blueball </td>
                             <td>STAR WARS</td>
-                            <td><a href="../pages/edit.html"><img src="../images/icons/edit_pencil.svg" alt="favicon de editar"></a></td>
-                            <td><a href="#"><img src="../images/icons/delete_trash.svg" alt="favicon de eliminar"></td>
+                            <td><a href="edit.html"><img class="admin__icon-pencil-delete"  src="/images/icons/edit_pencil.svg" alt="favicon de editar"></a></td>
+                            <td><a href="#"><img class="admin__icon-pencil-delete"  src="/images/icons/delete_trash.svg" alt="favicon de eliminar"></td>
                         </tr>
 
                         <tr>
@@ -68,8 +67,8 @@
                             <td>STW001002</td>
                             <td>Boba Fett Fighter</td>
                             <td>STAR WARS</td>
-                            <td><a href="../pages/edit.html"><img src="../images/icons/edit_pencil.svg" alt="favicon de editar"></a></td>
-                            <td><a href="#"><img src="../images/icons/delete_trash.svg" alt="favicon de eliminar"></td>
+                            <td><a href="/pages/edit.html"><img class="admin__icon-pencil-delete"  src="/images/icons/edit_pencil.svg" alt="favicon de editar"></a></td>
+                            <td><a href="#"><img class="admin__icon-pencil-delete"  src="/images/icons/delete_trash.svg" alt="favicon de eliminar"></td>
                         </tr>
 
                         <tr>
@@ -77,8 +76,8 @@
                             <td>STW001003</td>
                             <td>Luke Skylwalker & Grogu</td>
                             <td>STAR WARS</td>
-                            <td><a href="../pages/edit.html"><img src="../images/icons/edit_pencil.svg" alt="favicon de editar"></a></td>
-                            <td><a href="#"><img src="../images/icons/delete_trash.svg" alt="favicon de eliminar"></td>
+                            <td><a href="/pages/edit.html"><img class="admin__icon-pencil-delete"  src="/images/icons/edit_pencil.svg" alt="favicon de editar"></a></td>
+                            <td><a href="#"><img class="admin__icon-pencil-delete"  src="/images/icons/delete_trash.svg" alt="favicon de eliminar"></td>
                         </tr>
 
                         <tr>
@@ -86,8 +85,8 @@
                             <td>STW001004</td>
                             <td>Stormtrooper Lightsaber</td>
                             <td>STAR WARS</td>
-                            <td><a href="../pages/edit.html"><img src="../images/icons/edit_pencil.svg" alt="favicon de editar"></a></td>
-                            <td><a href="#"><img src="../images/icons/delete_trash.svg" alt="favicon de eliminar"></td>
+                            <td><a href="/pages/edit.html"><img class="admin__icon-pencil-delete"  src="/images/icons/edit_pencil.svg" alt="favicon de editar"></a></td>
+                            <td><a href="#"><img class="admin__icon-pencil-delete"  src="/images/icons/delete_trash.svg" alt="favicon de eliminar"></td>
                         </tr>
 
                         <tr>
@@ -95,8 +94,8 @@
                             <td>PKM001001</td>
                             <td>Charmander Smiley</td>
                             <td>POKEMON</td>
-                            <td><a href="../pages/edit.html"><img src="../images/icons/edit_pencil.svg" alt="favicon de editar"></a></td>
-                            <td><a href="#"><img src="../images/icons/delete_trash.svg" alt="favicon de eliminar"></td>
+                            <td><a href="/pages/edit.html"><img class="admin__icon-pencil-delete"  src="/images/icons/edit_pencil.svg" alt="favicon de editar"></a></td>
+                            <td><a href="#"><img class="admin__icon-pencil-delete"  src="/images/icons/delete_trash.svg" alt="favicon de eliminar"></td>
                         </tr>
 
                         <tr>
@@ -104,8 +103,8 @@
                             <td>PKM001002</td>
                             <td>Dragonite Hi!</td>
                             <td>POKEMON</td>
-                            <td><a href="../pages/edit.html"><img src="../images/icons/edit_pencil.svg" alt="favicon de editar"></a></td>
-                            <td><a href="#"><img src="../images/icons/delete_trash.svg" alt="favicon de eliminar"></td>
+                            <td><a href="/pages/edit.html"><img class="admin__icon-pencil-delete"  src="/images/icons/edit_pencil.svg" alt="favicon de editar"></a></td>
+                            <td><a href="#"><img class="admin__icon-pencil-delete"  src="/images/icons/delete_trash.svg" alt="favicon de eliminar"></td>
                         </tr>
 
                         <tr>
@@ -113,8 +112,8 @@
                             <td>PKM001003</td>
                             <td>Pidgeotto Flying</td>
                             <td>POKEMON</td>
-                            <td><a href="../pages/edit.html"><img src="../images/icons/edit_pencil.svg" alt="favicon de editar"></a></td>
-                            <td><a href="#"><img src="../images/icons/delete_trash.svg" alt="favicon de eliminar"></td>
+                            <td><a href="/pages/edit.html"><img class="admin__icon-pencil-delete"  src="/images/icons/edit_pencil.svg" alt="favicon de editar"></a></td>
+                            <td><a href="#"><img class="admin__icon-pencil-delete"  src="/images/icons/delete_trash.svg" alt="favicon de eliminar"></td>
                         </tr>
 
                         <tr>
@@ -122,8 +121,8 @@
                             <td>PKM001004</td>
                             <td>Pikachu Smiley</td>
                             <td>POKEMON</td>
-                            <td><a href="../pages/edit.html"><img src="../images/icons/edit_pencil.svg" alt="favicon de editar"></a></td>
-                            <td><a href="#"><img src="../images/icons/delete_trash.svg" alt="favicon de eliminar"></td>
+                            <td><a href="/pages/edit.html"><img class="admin__icon-pencil-delete"  src="/images/icons/edit_pencil.svg" alt="favicon de editar"></a></td>
+                            <td><a href="#"><img class="admin__icon-pencil-delete"  src="/images/icons/delete_trash.svg" alt="favicon de eliminar"></td>
                         </tr>
 
                         <tr>
@@ -131,8 +130,8 @@
                             <td>PKM001005</td>
                             <td>Vulpix Fancy</td>
                             <td>POKEMON</td>
-                            <td><a href="../pages/edit.html"><img src="../images/icons/edit_pencil.svg" alt="favicon de editar"></a></td>
-                            <td><a href="#"><img src="../images/icons/delete_trash.svg" alt="favicon de eliminar"></td>
+                            <td><a href="/pages/edit.html"><img class="admin__icon-pencil-delete"  src="/images/icons/edit_pencil.svg" alt="favicon de editar"></a></td>
+                            <td><a href="#"><img class="admin__icon-pencil-delete"  src="/images/icons/delete_trash.svg" alt="favicon de eliminar"></td>
                         </tr>
 
                         <tr>
@@ -140,8 +139,8 @@
                             <td>HPT001001</td>
                             <td>Harry Potter & Hegwid</td>
                             <td>HARRY POTTER</td>
-                            <td><a href="../pages/edit.html"><img src="../images/icons/edit_pencil.svg" alt="favicon de editar"></a></td>
-                            <td><a href="#"><img src="../images/icons/delete_trash.svg" alt="favicon de eliminar"></td>
+                            <td><a href="/pages/edit.html"><img class="admin__icon-pencil-delete"  src="/images/icons/edit_pencil.svg" alt="favicon de editar"></a></td>
+                            <td><a href="#"><img class="admin__icon-pencil-delete"  src="/images/icons/delete_trash.svg" alt="favicon de eliminar"></td>
                         </tr>
 
                         <tr>
@@ -149,8 +148,8 @@
                             <td>HPT001002</td>
                             <td>Herminione Ball Dress</td>
                             <td>HARRY POTTER</td>
-                            <td><a href="../pages/edit.html"><img src="../images/icons/edit_pencil.svg" alt="favicon de editar"></a></td>
-                            <td><a href="#"><img src="../images/icons/delete_trash.svg" alt="favicon de eliminar"></td>
+                            <td><a href="/pages/edit.html"><img class="admin__icon-pencil-delete"  src="/images/icons/edit_pencil.svg" alt="favicon de editar"></a></td>
+                            <td><a href="#"><img class="admin__icon-pencil-delete"  src="/images/icons/delete_trash.svg" alt="favicon de eliminar"></td>
                         </tr>
 
                         <tr>
@@ -158,8 +157,8 @@
                             <td>HPT001003</td>
                             <td>Luna Lovegood Lion Mask</td>
                             <td>HARRY POTTER</td>
-                            <td><a href="../pages/edit.html"><img src="../images/icons/edit_pencil.svg" alt="favicon de editar"></a></td>
-                            <td><a href="#"><img src="../images/icons/delete_trash.svg" alt="favicon de eliminar"></td>
+                            <td><a href="/pages/edit.html"><img class="admin__icon-pencil-delete"  src="/images/icons/edit_pencil.svg" alt="favicon de editar"></a></td>
+                            <td><a href="#"><img class="admin__icon-pencil-delete"  src="/images/icons/delete_trash.svg" alt="favicon de eliminar"></td>
                         </tr>
 
                         <tr>
@@ -167,8 +166,8 @@
                             <td>HPT001004</td>
                             <td>Snape Patronus</td>
                             <td>HARRY POTTER</td>
-                            <td><a href="../pages/edit.html"><img src="../images/icons/edit_pencil.svg" alt="favicon de editar"></a></td>
-                            <td><a href="#"><img src="../images/icons/delete_trash.svg" alt="favicon de eliminar"></td>
+                            <td><a href="/pages/edit.html"><img class="admin__icon-pencil-delete"  src="/images/icons/edit_pencil.svg" alt="favicon de editar"></a></td>
+                            <td><a href="#"><img class="admin__icon-pencil-delete"  src="/images/icons/delete_trash.svg" alt="favicon de eliminar"></td>
                         </tr>
                     </tbody>
                 </table>
