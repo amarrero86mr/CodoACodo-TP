@@ -59,6 +59,7 @@
 .item__control-input {
     width: var(--spacing-128);
     text-align: center;
+    font-size: var(--font-medium-20);
 }
 .item__control-add {
     color: var(--light-bg-solid);

@@ -57,10 +57,10 @@
                 <p class="item__selected-descr">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
                 <p class="item__selected-price">$ 1799,99</p>
                 <form class="item__form">
-                    <input class="item__control-input" type="number" min="0" step="1" value="0" name="" id="cantidad">
+                    <input class="item__control-input" type="number" min="0" step="1" value="0" name="quantity" id="quantity">
                     <div class="item__subcontrol">
-                        <button class="item__control-add" name="cantidad">+</button>
-                        <button class="item__control-subtract" name="cantidad">-</button>
+                        <button id="add" class="item__control-add" type="button" name="cantidad">+</button>
+                        <button id="subtract" class="item__control-subtract" type="button" name="cantidad">-</button>
                     </div>
                     <button class="item__control-button">Agregar al Carrito</button>
                 </form>
@@ -176,5 +176,6 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script src="../../js/slider.js"></script>
+    <script src="/js/item.js"></script>
 </body>
 </html>
