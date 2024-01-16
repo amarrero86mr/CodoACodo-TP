@@ -1,15 +1,32 @@
-@import url("./variables.css");
+/*import*/
+@import url("https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css");
+@import url("https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css");
+
+
+/*base*/
 
 @import url("./base.css");
-@import url("./navbar.css");
-@import url("./baner.css");
+@import url("./variables.css");
+
+
+
+
+
+/*partials*/
+@import url("./partials-css/baner.css");
+@import url("./partials-css/navbar.css");
+@import url("./partials-css/footer.css");
+@import url("./partials-css/cart-responcive.css");
+@import url("./partials-css/slider.css");
+
+/*pages*/
+
 @import url("./home.css");
-@import url("./footer.css");
 @import url("./shop.css");
 @import url("./item.css");
 @import url("./cart.css");
-@import url("./cart-responcive.css");
 @import url("./contacto.css");
 @import url("./register.css");
 @import url("./login.css");
 @import url("./create.css");
+@import url("./admin.css");
