@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 //middlewares
-app.use(express.static('public_html'));
+app.use(express.static('public'));
 
 
 app.get('/ping', (req, res) => res.send('pong'));
